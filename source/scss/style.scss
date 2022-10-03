@@ -43,16 +43,37 @@ body {
   width: 80px;
 }
 
-.user__info {
+.user__header {
   margin-left: 15px;
   margin-bottom: 3px;
 }
 
-.user__info-name {
+.user__header-name {
   font-weight: 700;
   font-size: 1.5rem;
 }
 
-.user__info-profession {
+.user__header-profession {
   color: $gray;
 }
+
+.menu-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.menu-link {
+  padding: 0 10px;
+  line-height: 50px;
+  color: #000;
+  transition: .3s;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+text-decoration: underline;
+color: crimson;
+}
+
