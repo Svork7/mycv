@@ -63,7 +63,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: flex-end;
-  margin-left: auto;
+  margin-right: 50px;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -98,17 +98,22 @@ body {
 
 
 .intro__content-name {
-  margin: 30px auto 0; 
+  margin: 30px auto 0;
+  padding: 0 20px ;
+  text-align: center;
 }
 
 .intro__content-profession {
   color: $gray;
-  margin: 0 auto; 
+  margin: 0 auto;
+  text-align: center; 
+  padding: 0 20px ;
 }
 
 .intro__image-container {
   width: 50%;
   text-align: center;
+  margin-right: 50px;
 }
   
 
