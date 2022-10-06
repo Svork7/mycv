@@ -128,6 +128,29 @@ body {
   padding: 0 20px;
 }
 
+.intro__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-icon {
+  width: 40px;
+  margin: 20px;
+}
+.social-icon:hover {
+  scale: 125%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.social-icon:hover {
+  text-decoration: underline;
+  color: crimson;
+}
+
 .intro__image-container {
   width: 50%;
   text-align: center;
@@ -137,4 +160,5 @@ body {
 .intro__image {
   width: 50%;
   margin: 0 auto;
+  border-radius: 20%;
 }

@@ -110,6 +110,24 @@ body {
   padding: 0 20px ;
 }
 
+.intro__social {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.social-icon {
+  width: 40px;
+  margin: 20px;
+  border-radius: 20%;
+  transition: .4s;
+  &:hover {
+    scale: 130%;
+    
+  }
+ 
+}
+
 .intro__image-container {
   width: 50%;
   text-align: center;
@@ -120,5 +138,6 @@ body {
 .intro__image {
  width: 50%;
  margin: 0 auto;
+ border-radius: 20%;
 }
 
