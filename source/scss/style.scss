@@ -86,6 +86,7 @@ body {
 .intro__inner {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .intro__content {
@@ -95,11 +96,24 @@ body {
   justify-content: center;
 }
 
-.intro__content-profession {
-  color: $gray;
+
+.intro__content-name {
+  margin: 30px auto 0; 
 }
 
-.intro__image {
+.intro__content-profession {
+  color: $gray;
+  margin: 0 auto; 
+}
+
+.intro__image-container {
   width: 50%;
+  text-align: center;
+}
+  
+
+.intro__image {
+ width: 50%;
+ margin: 0 auto;
 }
 
