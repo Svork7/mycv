@@ -15,6 +15,8 @@ body {
 .header {
   padding: 1.2rem 0;
   position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#21aed1), to(#dedede));
+  background: linear-gradient(180deg, #21aed1 0%, #dedede 100%);
 }
 
 .header__inner {
@@ -137,18 +139,18 @@ body {
           justify-content: center;
 }
 
+*.social-link {
+  margin: 10px;
+}
+
 .social-icon {
   width: 40px;
-  margin: 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .social-icon:hover {
-  scale: 125%;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.social-icon:hover {
-  text-decoration: underline;
-  color: crimson;
+  scale: 130%;
+  cursor: pointer;
 }
 
 .intro__image-container {
@@ -161,4 +163,10 @@ body {
   width: 50%;
   margin: 0 auto;
   border-radius: 20%;
+}
+
+.liquid-button {
+  margin: auto;
+  font-weight: bold;
+  cursor: pointer;
 }
