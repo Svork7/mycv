@@ -147,13 +147,16 @@ body {
  border-radius: 20%;
 }
 
-.button {
-  text-align: center;
+.button__container {
+  display: flex;
+justify-content: center;
 }
+
 
 .liquid-button {
   margin: auto;
   font-weight: bold;
+
  
     cursor: pointer;
 }
