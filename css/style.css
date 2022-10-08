@@ -152,6 +152,9 @@ body {
   scale: 130%;
   cursor: pointer;
 }
+.social-icon:focus {
+  scale: 130%;
+}
 
 .intro__image-container {
   width: 50%;

@@ -131,7 +131,9 @@ body {
     scale: 130%;
     cursor: pointer;
   }
- 
+  &:focus {
+    scale: 130%;
+  }
 }
 
 .intro__image-container {
@@ -156,8 +158,8 @@ justify-content: center;
 .liquid-button {
   margin: auto;
   font-weight: bold;
-
- 
-    cursor: pointer;
+  cursor: pointer;
 }
+
+
 
