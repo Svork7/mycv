@@ -161,5 +161,22 @@ justify-content: center;
   cursor: pointer;
 }
 
+.aboutme__title {
+  font-size: 2rem;
+}
+.skills__item {
+  text-align: center;
+}
+.skills__items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+
+.skills__item-image {
+  max-width: 100px;
+}
+
 
 

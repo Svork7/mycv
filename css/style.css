@@ -182,3 +182,25 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
+
+.aboutme__title {
+  font-size: 2rem;
+}
+
+.skills__item {
+  text-align: center;
+}
+
+.skills__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skills__item-image {
+  max-width: 100px;
+}
