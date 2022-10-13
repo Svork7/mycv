@@ -130,6 +130,13 @@ body {
   padding: 0 20px;
 }
 
+.intro__content-city {
+  color: #6a696b;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
 .intro__social {
   display: -webkit-box;
   display: -ms-flexbox;
