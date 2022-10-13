@@ -190,8 +190,37 @@ body {
   cursor: pointer;
 }
 
-.aboutme__title {
+.aboutme__title, .skills__title {
   font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.aboutme__text {
+  margin: 15px 30px;
+  text-align: justify;
+}
+
+.aboutme-link {
+  color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: 700;
+}
+.aboutme-link:hover {
+  text-decoration: underline;
+  color: crimson;
+}
+
+.skills__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .skills__item {
@@ -206,16 +235,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.skills__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .skills__item-image {
