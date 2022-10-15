@@ -300,10 +300,6 @@ body {
   scale: 110%;
 }
 
-h4 {
-  line-height: 0, 5rem;
-}
-
 .education__items {
   display: -webkit-box;
   display: -ms-flexbox;
