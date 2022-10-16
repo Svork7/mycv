@@ -5,11 +5,11 @@ $white: #ffffff;
 $light-blue: #21aed1;
 
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: $black;
@@ -74,12 +74,12 @@ body {
   text-transform: uppercase;
   color: #000;
   font-size: 0.75rem;
-  transition: .3s;
+  transition: 0.3s;
   text-decoration: none;
   font-weight: 700;
-    &:hover {
-      text-decoration: underline;
-      color: crimson;
+  &:hover {
+    text-decoration: underline;
+    color: crimson;
   }
 }
 
@@ -129,13 +129,13 @@ body {
 
 .social-icon {
   width: 40px;
-  transition: .4s;
-    &:hover {
-      scale: 130%;
-      cursor: pointer;
+  transition: 0.4s;
+  &:hover {
+    scale: 130%;
+    cursor: pointer;
   }
-    &:focus {
-      scale: 130%;
+  &:focus {
+    scale: 130%;
   }
 }
 
@@ -162,7 +162,9 @@ body {
   cursor: pointer;
 }
 
-.aboutme__inner, .skills__inner, .education__inner {
+.aboutme__inner,
+.skills__inner,
+.education__inner {
   border-bottom: $gray solid 2px;
   padding-bottom: 1rem;
 }
@@ -179,14 +181,13 @@ body {
 }
 
 .aboutme-link {
-  
   color: #000;
-  transition: .3s;
+  transition: 0.3s;
   text-decoration: none;
   font-weight: 700;
-    &:hover {
-      text-decoration: underline;
-      color: crimson;
+  &:hover {
+    text-decoration: underline;
+    color: crimson;
   }
 }
 
@@ -212,7 +213,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-} 
+}
 
 .project__item {
   display: flex;
@@ -230,17 +231,16 @@ body {
 }
 .project__link {
   color: #000;
-  transition: .3s;
+  transition: 0.3s;
   text-decoration: none;
   font-weight: 700;
-  
-    &:hover {
-      text-decoration: underline;
-      color: crimson;
-      scale: 110%;
+
+  &:hover {
+    text-decoration: underline;
+    color: crimson;
+    scale: 110%;
   }
 }
-
 
 .education__items {
   display: flex;

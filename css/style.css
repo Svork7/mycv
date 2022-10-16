@@ -196,7 +196,9 @@ body {
   cursor: pointer;
 }
 
-.aboutme__inner, .skills__inner, .education__inner {
+.aboutme__inner,
+.skills__inner,
+.education__inner {
   border-bottom: #6a696b solid 2px;
   padding-bottom: 1rem;
 }
