@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: $black;
@@ -80,6 +80,7 @@ body {
   &:hover {
     text-decoration: underline;
     color: crimson;
+    font-size: 1rem;
   }
 }
 
@@ -229,6 +230,7 @@ body {
   margin: 1rem auto;
   text-align: center;
 }
+
 .project__link {
   color: #000;
   transition: 0.3s;

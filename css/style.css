@@ -93,6 +93,7 @@ body {
 .menu__list-link:hover {
   text-decoration: underline;
   color: crimson;
+  font-size: 1rem;
 }
 
 .intro__inner {
