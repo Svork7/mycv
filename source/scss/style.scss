@@ -24,7 +24,6 @@ body {
 
 .header {
   padding: 1.2rem 0;
-
   background: linear-gradient(180deg, $light-blue 0%, $light-gray 100%);
 }
 
@@ -42,7 +41,21 @@ body {
 }
 
 .user__logo {
-  width: 80px;
+  width: 50px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .user__logo {
+    animation: user__logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes user__logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .user__header {
