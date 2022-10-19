@@ -49,32 +49,19 @@ body {
   width: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/*@media (prefers-reduced-motion: no-preference) {
   .user__logo {
-    -webkit-animation: user__logo-spin infinite 20s linear;
-            animation: user__logo-spin infinite 20s linear;
+    animation: user__logo-spin infinite 20s linear;
   }
-}
-@-webkit-keyframes user__logo-spin {
+}*/
+/*@keyframes user__logo-spin {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
-}
-@keyframes user__logo-spin {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
+}*/
 .user__header {
   margin-left: 15px;
   margin-bottom: 3px;

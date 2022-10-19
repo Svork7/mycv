@@ -43,20 +43,20 @@ body {
 .user__logo {
   width: 50px;
 }
-@media (prefers-reduced-motion: no-preference) {
+/*@media (prefers-reduced-motion: no-preference) {
   .user__logo {
     animation: user__logo-spin infinite 20s linear;
   }
-}
+}*/
 
-@keyframes user__logo-spin {
+/*@keyframes user__logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+}*/
 
 .user__header {
   margin-left: 15px;
