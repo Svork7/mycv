@@ -21,6 +21,11 @@ body {
   background: -webkit-gradient(linear, left top, left bottom, from(#21aed1), to(#dedede));
   background: linear-gradient(180deg, #21aed1 0%, #dedede 100%);
 }
+@media print {
+  .header {
+    display: none;
+  }
+}
 
 .header__inner {
   display: -webkit-box;
@@ -124,11 +129,11 @@ body {
   .intro__inner {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 auto;
   }
 }
 .intro__inner .intro__content {
   width: 50%;
+  min-width: 670px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -191,7 +196,13 @@ body {
 
 .intro__image-container {
   width: 50%;
-  margin-right: 50px;
+  min-width: 600px;
+}
+@media screen and (max-width: 670px) {
+  .intro__image-container {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .intro__image {
@@ -267,9 +278,34 @@ body {
           justify-content: space-between;
   margin: 2rem;
 }
+@media screen and (max-width: 670px) {
+  .skills__item {
+    margin: 1rem;
+  }
+}
 
 .skills__item-image {
   max-width: 100px;
+}
+@media screen and (max-width: 670px) {
+  .skills__item-image {
+    max-width: 60px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+.education__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.education__item {
+  margin: 1rem;
 }
 
 .projects__container {
@@ -314,26 +350,18 @@ body {
   font-weight: 700;
 }
 .project__link:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: crimson;
   scale: 110%;
-}
-
-.education__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.education__item {
-  margin: 1rem;
 }
 
 .footer {
   padding: 1.2rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#21aed1));
   background: linear-gradient(180deg, #dedede 0%, #21aed1 100%);
+}
+@media print {
+  .footer {
+    display: none;
+  }
 }

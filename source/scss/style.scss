@@ -25,6 +25,9 @@ body {
 .header {
   padding: 1.2rem 0;
   background: linear-gradient(180deg, $light-blue 0%, $light-gray 100%);
+  @media print {
+    display: none;
+  }
 }
 
 .header__inner {
@@ -104,11 +107,11 @@ body {
   border-bottom: $gray solid 2px;
   @media screen and (max-width: 670px) {
     flex-wrap: wrap;
-    margin: 0 auto;
   }
 
   .intro__content {
     width: 50%;
+    min-width: 670px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -159,16 +162,18 @@ body {
 
 .intro__image-container {
   width: 50%;
+  min-width: 600px;
   // text-align: center;
-  margin-right: 50px;
-  //@media screen and (max-width: 670px) {
-  //   margin: 0 auto;
-  // }
+
+  @media screen and (max-width: 670px) {
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 .intro__image {
   //width: 50%;
-  // margin-right: 50px;
+
   //margin: 1rem auto;
   border-radius: 20%;
 }
@@ -225,10 +230,26 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin: 2rem;
+  @media screen and (max-width: 670px) {
+    margin: 1rem;
+  }
 }
 
 .skills__item-image {
   max-width: 100px;
+  @media screen and (max-width: 670px) {
+    max-width: 60px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+.education__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education__item {
+  margin: 1rem;
 }
 
 .projects__container {
@@ -259,22 +280,16 @@ body {
   font-weight: 700;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: none;
     color: crimson;
     scale: 110%;
   }
 }
 
-.education__items {
-  display: flex;
-  justify-content: space-between;
-}
-
-.education__item {
-  margin: 1rem;
-}
-
 .footer {
   padding: 1.2rem 0;
   background: linear-gradient(180deg, $light-gray 0%, $light-blue 100%);
+  @media print {
+    display: none;
+  }
 }
