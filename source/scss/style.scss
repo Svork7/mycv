@@ -231,7 +231,8 @@ body {
   justify-content: space-between;
   margin: 2rem;
   @media screen and (max-width: 670px) {
-    margin: 1rem;
+    margin: 0.75rem;
+    width: 100px;
   }
 }
 
@@ -266,6 +267,10 @@ body {
   max-width: 300px;
   max-height: 300px;
   margin: 1rem;
+
+  .tictactoe {
+    margin: 1rem 3rem;
+  }
 }
 
 .project__item-title {
