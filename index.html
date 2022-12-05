@@ -39,7 +39,7 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__inner">
+        <div class="header__inner" id="header">
           <div class="user">
             <img src="assets/svg/melogo.svg" alt="" class="user__logo" />
             <div class="user__header">
@@ -48,6 +48,9 @@
             </div>
           </div>
           <nav class="menu">
+            <div class="menu__btn">
+              <span> </span>
+            </div>
             <ul class="menu__list">
               <li class="menu__list-item">
                 <a href="#aboutme" class="menu__list-link">Обо мне</a>
@@ -438,29 +441,12 @@
       <footer class="footer">
         <div class="container">
           <div class="footer__inner">
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__list-item">
-                  <a href="#aboutme" class="menu__list-link">Обо мне</a>
-                </li>
-                <li class="menu__list-item">
-                  <a href="#skills" class="menu__list-link">Навыки</a>
-                </li>
-                <li class="menu__list-item">
-                  <a href="#education" class="menu__list-link">Образование</a>
-                </li>
-                <li class="menu__list-item">
-                  <a href="#projects" class="menu__list-link">Работы</a>
-                </li>
-                <li class="menu__list-item">
-                  <a href="#contacts" class="menu__list-link">Контакты</a>
-                </li>
-              </ul>
-            </nav>
+            <a href="#header" class="footer__link">В начало страницы</a>
           </div>
         </div>
       </footer>
     </main>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
