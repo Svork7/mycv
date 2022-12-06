@@ -93,6 +93,9 @@ body {
     display: block;
     background: transparent;
   }
+  .menu__btn:active, .menu__btn:hover {
+    background: transparent;
+  }
 }
 .menu__btn > div {
   width: 2.5rem;

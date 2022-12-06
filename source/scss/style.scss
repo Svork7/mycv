@@ -85,6 +85,10 @@ body {
   @media (max-width: 770px) {
     display: block;
     background: transparent;
+    &:active,
+    &:hover {
+      background: transparent;
+    }
   }
 
   & > div {
