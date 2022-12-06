@@ -91,10 +91,11 @@ body {
 @media (max-width: 770px) {
   .menu__btn {
     display: block;
+    background: transparent;
   }
 }
 .menu__btn > div {
-  width: 3.5rem;
+  width: 2.5rem;
   height: 0.5rem;
   background: #2b2a2c;
 }
@@ -104,7 +105,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  width: 3.5rem;
+  width: 2.5rem;
   height: 0.5rem;
   background: #2b2a2c;
 }
@@ -311,9 +312,33 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media print {
+  .intro__social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+  }
+}
 
-*.social-link {
+.forprint {
+  display: none;
+}
+@media print {
+  .forprint {
+    display: inline-block;
+    font-size: 1.25rem;
+  }
+}
+
+.social-link {
   margin: 10px;
+}
+@media print {
+  .social-link {
+    margin: 5px;
+  }
 }
 
 .social-icon {
@@ -328,6 +353,18 @@ body {
 .social-icon:focus {
   scale: 130%;
 }
+@media print {
+  .social-icon {
+    width: 20px;
+    margin-right: 10px;
+  }
+}
+
+@media print {
+  .linkedin {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 770px) {
   .intro__image-container {
@@ -339,6 +376,11 @@ body {
 .intro__image {
   border-radius: 20%;
 }
+@media print {
+  .intro__image {
+    width: 200px;
+  }
+}
 
 .button__container {
   display: -webkit-box;
@@ -347,6 +389,11 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media print {
+  .button__container {
+    display: none;
+  }
 }
 
 .liquid-button {
@@ -417,7 +464,8 @@ body {
 }
 @media print {
   .skills__item {
-    margin: 0.75rem;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
     width: 60px;
   }
 }
@@ -434,7 +482,6 @@ body {
 }
 @media print {
   .skills__item-image {
-    margin: 0.75rem;
     width: 60px;
   }
 }
@@ -465,6 +512,12 @@ body {
   text-align: justify;
 }
 
+@media print {
+  .projects__inner {
+    display: none;
+  }
+}
+
 .projects__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -473,11 +526,6 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-@media print {
-  .projects__container {
-    display: none;
-  }
 }
 
 .project__item {

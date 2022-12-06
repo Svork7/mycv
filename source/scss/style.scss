@@ -84,10 +84,11 @@ body {
   padding: 3rem 1.5rem; ///////////////// touch area size
   @media (max-width: 770px) {
     display: block;
+    background: transparent;
   }
 
   & > div {
-    width: 3.5rem;
+    width: 2.5rem;
     height: 0.5rem;
     // border-radius: var(--borderRadius);
     background: $black;
@@ -98,7 +99,7 @@ body {
       content: '';
       display: block;
       position: absolute;
-      width: 3.5rem;
+      width: 2.5rem;
       height: 0.5rem;
 
       background: $black;
@@ -269,21 +270,46 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  @media print {
+    flex-direction: column;
+    margin-top: 20px;
+  }
 }
 
-*.social-link {
+.forprint {
+  display: none;
+  @media print {
+    display: inline-block;
+    font-size: 1.25rem;
+  }
+}
+.social-link {
   margin: 10px;
+  @media print {
+    margin: 5px;
+  }
 }
 
 .social-icon {
   width: 40px;
   transition: 0.4s;
+
   &:hover {
     scale: 130%;
     cursor: pointer;
   }
   &:focus {
     scale: 130%;
+  }
+  @media print {
+    width: 20px;
+    margin-right: 10px;
+  }
+}
+
+.linkedin {
+  @media print {
+    display: none;
   }
 }
 
@@ -296,19 +322,23 @@ body {
     text-align: center;
   }
 }
-
 .intro__image {
   //width: 50%;
 
   //margin: 1rem auto;
   border-radius: 20%;
+  @media print {
+    width: 200px;
+  }
 }
 
 .button__container {
   display: flex;
   justify-content: center;
+  @media print {
+    display: none;
+  }
 }
-
 .liquid-button {
   margin: auto;
   font-weight: bold;
@@ -361,7 +391,8 @@ body {
     width: 100px;
   }
   @media print {
-    margin: 0.75rem;
+    margin-left: 1.8rem;
+    margin-right: 1.8rem;
     width: 60px;
   }
 }
@@ -374,7 +405,6 @@ body {
     margin: 0 auto;
   }
   @media print {
-    margin: 0.75rem;
     width: 60px;
   }
 }
@@ -408,13 +438,15 @@ body {
   text-align: justify;
 }
 
+.projects__inner {
+  @media print {
+    display: none;
+  }
+}
 .projects__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  @media print {
-    display: none;
-  }
 }
 
 .project__item {
