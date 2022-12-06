@@ -134,15 +134,15 @@ body {
           transform: rotate(180deg);
 }
 .burger1.toggled > div::before {
-  -webkit-transform: rotate(45deg) translate(1.1rem, 1rem);
-          transform: rotate(45deg) translate(1.1rem, 1rem);
+  -webkit-transform: rotate(45deg) translate(0.4rem, 1rem);
+          transform: rotate(45deg) translate(0.4rem, 1rem);
 }
 .burger1.toggled > div {
   background: transparent;
 }
 .burger1.toggled > div::after {
-  -webkit-transform: rotate(-45deg) translate(1.1rem, -1rem);
-          transform: rotate(-45deg) translate(1.1rem, -1rem);
+  -webkit-transform: rotate(-45deg) translate(0.4rem, -1rem);
+          transform: rotate(-45deg) translate(0.4rem, -1rem);
 }
 
 /*.menu__btn {
@@ -208,6 +208,7 @@ body {
   .menu__list {
     display: block;
     position: absolute;
+    margin-right: 0;
     left: 0;
     right: 0;
     background: -webkit-gradient(linear, left top, left bottom, from(#dedede), to(#21aed1));
@@ -414,6 +415,12 @@ body {
     width: 100px;
   }
 }
+@media print {
+  .skills__item {
+    margin: 0.75rem;
+    width: 60px;
+  }
+}
 
 .skills__item-image {
   max-width: 100px;
@@ -425,18 +432,37 @@ body {
     margin: 0 auto;
   }
 }
-
-.education__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media print {
+  .skills__item-image {
+    margin: 0.75rem;
+    width: 60px;
+  }
 }
 
-.education__item {
-  margin: 1rem;
+.education__items {
+  padding: 10px;
+}
+
+.edu__link {
+  color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: 700;
+}
+.edu__link:hover {
+  text-decoration: underline;
+  color: crimson;
+}
+
+.education__h3 {
+  margin: 10px 10px 0 0;
+  text-align: justify;
+}
+
+.education__h4 {
+  margin-bottom: 10px;
+  text-align: justify;
 }
 
 .projects__container {
@@ -447,6 +473,11 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+@media print {
+  .projects__container {
+    display: none;
+  }
 }
 
 .project__item {
@@ -471,18 +502,24 @@ body {
   text-align: center;
 }
 
-.project__link {
+.footer__link {
   color: #000;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   text-decoration: none;
   font-weight: 700;
-  text-align: center;
+  text-align: right;
+  margin-right: 20px;
 }
-.project__link:hover {
+.footer__link:hover {
   text-decoration: none;
   color: crimson;
-  scale: 110%;
+  scale: 120%;
+}
+
+.footer__nav {
+  text-align: right;
+  margin-right: 20px;
 }
 
 .footer {
