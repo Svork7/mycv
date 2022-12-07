@@ -88,6 +88,8 @@ body {
     &:active,
     &:hover {
       background: transparent;
+      background-color: transparent;
+      outline: none;
     }
   }
 
@@ -331,22 +333,31 @@ body {
 
   //margin: 1rem auto;
   border-radius: 20%;
+
   @media print {
     width: 200px;
+  }
+  @media screen and (max-width: 770px) {
+    margin-bottom: 20px;
   }
 }
 
 .button__container {
   display: flex;
   justify-content: center;
+  outline: none;
   @media print {
     display: none;
   }
 }
+
 .liquid-button {
   margin: auto;
   font-weight: bold;
   cursor: pointer;
+  &:active {
+    outline: none;
+  }
 }
 
 .aboutme__inner,

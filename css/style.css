@@ -95,6 +95,8 @@ body {
   }
   .menu__btn:active, .menu__btn:hover {
     background: transparent;
+    background-color: transparent;
+    outline: none;
   }
 }
 .menu__btn > div {
@@ -384,6 +386,11 @@ body {
     width: 200px;
   }
 }
+@media screen and (max-width: 770px) {
+  .intro__image {
+    margin-bottom: 20px;
+  }
+}
 
 .button__container {
   display: -webkit-box;
@@ -392,6 +399,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  outline: none;
 }
 @media print {
   .button__container {
@@ -403,6 +411,9 @@ body {
   margin: auto;
   font-weight: bold;
   cursor: pointer;
+}
+.liquid-button:active {
+  outline: none;
 }
 
 .aboutme__inner,
