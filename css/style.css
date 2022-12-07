@@ -86,7 +86,9 @@ body {
   display: none;
   font-size: 1rem;
   cursor: pointer;
-  padding: 3rem 1.5rem;
+  padding: 1.2rem 0;
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0);
 }
 @media (max-width: 770px) {
   .menu__btn {

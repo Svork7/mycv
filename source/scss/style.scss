@@ -81,7 +81,9 @@ body {
   display: none;
   font-size: 1rem;
   cursor: pointer;
-  padding: 3rem 1.5rem; ///////////////// touch area size
+  padding: 1.2rem 0; ///////////////// touch area size
+  background: transparent;
+  background-color: rgba(0, 0, 0, 0);
   @media (max-width: 770px) {
     display: block;
     background: transparent;
